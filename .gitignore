@@ -12,3 +12,6 @@ target
 # Intellij related files and directories
 .idea
 *.iml
+
+# Local shell scripts to be ignored
+*.ignore.sh

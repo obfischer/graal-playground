@@ -1,0 +1,22 @@
+= TopTen - Find The Top Ten Words in a Text File
+
+Here you can find a short Java programm to find the ten most used words
+in a given text file. This programm is used by me to compare the features
+of the https://www.graalvm.org[GraalVM^] with other JVM implementations.
+
+The program was written by Chris Seaton and can be found
+https://github.com/chrisseaton/graalvm-ten-things.
+
+== Running as JMH benchmark
+
+The JMH framework is used to gather performance information
+by running the the underlying algorithm as JMH benchmark.
+
+
+Steps to run the benchmark:
+
+1. Build the required text files by executing the following commands:
+   `make large.txt` and `make small.txt`.
+2. Set `JAVA_HOME` to the installation directory of the JDK you
+   would like to use.
+3. Run the benchmark by executing `$JAVA_HOME/bin/java -jar target/benchmarks.jar`.
