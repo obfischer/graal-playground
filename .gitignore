@@ -1,0 +1,14 @@
+*~
+*.class
+*.log
+target
+.DS_Store
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Intellij related files and directories
+.idea
+*.iml
